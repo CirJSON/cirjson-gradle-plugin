@@ -19,5 +19,6 @@ rootProject.name = "cirjson-gradle-plugin"
 
 include(":cirjson-compiler-plugin.common")
 include(":cirjson-compiler-plugin.k1")
+include(":cirjson-compiler-plugin.k2")
 include(":cirjson-compiler-plugin.backend")
 

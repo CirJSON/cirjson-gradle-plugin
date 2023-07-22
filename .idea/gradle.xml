@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/cirjson-compiler-plugin.backend" />
             <option value="$PROJECT_DIR$/cirjson-compiler-plugin.common" />
             <option value="$PROJECT_DIR$/cirjson-compiler-plugin.k1" />
+            <option value="$PROJECT_DIR$/cirjson-compiler-plugin.k2" />
           </set>
         </option>
       </GradleProjectSettings>
