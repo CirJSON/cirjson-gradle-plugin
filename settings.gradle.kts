@@ -1,4 +1,5 @@
-pluginManagement { //    includeBuild("repo/gradle-settings-conventions")
+pluginManagement {
+    //    includeBuild("repo/gradle-settings-conventions")
     //    includeBuild("repo/gradle-build-conventions")
 
     repositories {
