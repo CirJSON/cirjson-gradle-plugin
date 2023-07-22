@@ -1,5 +1,6 @@
 package org.cirjson.compiler.extensions
 
+import org.cirjson.compiler.backend.ir.SerializationJvmIrIntrinsicSupport
 import org.cirjson.compiler.resolve.SerializationPackages
 import org.jetbrains.kotlin.backend.common.BackendContext
 import org.jetbrains.kotlin.backend.common.extensions.IrGenerationExtension

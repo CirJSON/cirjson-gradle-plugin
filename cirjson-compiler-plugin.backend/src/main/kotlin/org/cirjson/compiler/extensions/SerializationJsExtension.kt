@@ -1,5 +1,8 @@
 package org.cirjson.compiler.extensions
 
+import org.cirjson.compiler.backend.js.SerializableCompanionJsTranslator
+import org.cirjson.compiler.backend.js.SerializableJsTranslator
+import org.cirjson.compiler.backend.js.SerializerJsTranslator
 import org.jetbrains.kotlin.descriptors.ClassDescriptor
 import org.jetbrains.kotlin.js.translate.context.TranslationContext
 import org.jetbrains.kotlin.js.translate.declaration.DeclarationBodyVisitor

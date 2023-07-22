@@ -1,5 +1,9 @@
 package org.cirjson.compiler.extensions
 
+import org.cirjson.compiler.backend.jvm.SerialInfoCodegenImpl
+import org.cirjson.compiler.backend.jvm.SerializableCodegenImpl
+import org.cirjson.compiler.backend.jvm.SerializableCompanionCodegenImpl
+import org.cirjson.compiler.backend.jvm.SerializerCodegenImpl
 import org.jetbrains.kotlin.codegen.ImplementationBodyCodegen
 import org.jetbrains.kotlin.codegen.extensions.ExpressionCodegenExtension
 

@@ -1,6 +1,6 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType
 import org.jetbrains.kotlin.gradle.targets.js.KotlinJsCompilerAttribute
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript { // a workaround for kotlin compiler classpath in kotlin project: sometimes gradle substitutes
     // kotlin-stdlib external dependency with local project :kotlin-stdlib in kotlinCompilerClasspath configuration.
@@ -16,7 +16,6 @@ buildscript { // a workaround for kotlin compiler classpath in kotlin project: s
 
 plugins {
     kotlin("jvm") version "1.9.0"
-    `kotlin-dsl`
 }
 
 group = "org.cirjson.gradle.plugin"
@@ -51,7 +50,8 @@ repositories {
     mavenCentral()
 }
 
-dependencies { //    embedded(project(":kotlinx-serialization-compiler-plugin.common"))// { isTransitive = false }
+dependencies {
+    //    embedded(project(":kotlinx-serialization-compiler-plugin.common"))// { isTransitive = false }
     //    embedded(project(":kotlinx-serialization-compiler-plugin.k1")) { isTransitive = false }
     //    embedded(project(":kotlinx-serialization-compiler-plugin.k2")) { isTransitive = false }
     //    embedded(project(":kotlinx-serialization-compiler-plugin.backend")) { isTransitive = false }

@@ -1,5 +1,6 @@
 package org.cirjson.compiler.extensions
 
+import org.cirjson.compiler.backend.ir.*
 import org.jetbrains.kotlin.backend.common.ClassLoweringPass
 import org.jetbrains.kotlin.backend.common.extensions.IrPluginContext
 import org.jetbrains.kotlin.ir.declarations.IrClass
