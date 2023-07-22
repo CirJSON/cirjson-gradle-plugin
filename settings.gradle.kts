@@ -15,7 +15,7 @@ plugins { //    id("build-cache")
     //    id("kotlin-daemon-config")
 }
 
-rootProject.name = "cirjson-gradle-plugins"
+rootProject.name = "cirjson-gradle-plugin"
 
 include(":cirjson-compiler-plugin.common")
 include(":cirjson-compiler-plugin.k1")
