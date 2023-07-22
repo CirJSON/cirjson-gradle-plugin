@@ -1,12 +1,16 @@
 package org.cirjson.compiler.backend.ir
 
+import org.cirjson.compiler.backend.jvm.*
 import org.cirjson.compiler.diagnostic.VersionReader
+import org.cirjson.compiler.resolve.SerialEntityNames.ANNOTATED_ENUM_SERIALIZER_FACTORY_FUNC_NAME
+import org.cirjson.compiler.resolve.SerialEntityNames.ENUM_SERIALIZER_FACTORY_FUNC_NAME
 import org.cirjson.compiler.resolve.SerializersClassIds.contextSerializerId
 import org.cirjson.compiler.resolve.SerializersClassIds.enumSerializerId
 import org.cirjson.compiler.resolve.SerializersClassIds.objectSerializerId
 import org.cirjson.compiler.resolve.SerializersClassIds.polymorphicSerializerId
 import org.cirjson.compiler.resolve.SerializersClassIds.referenceArraySerializerId
 import org.cirjson.compiler.resolve.SerializersClassIds.sealedSerializerId
+import org.cirjson.compiler.resolve.SpecialBuiltins
 import org.cirjson.compiler.resolve.getClassFromSerializationPackage
 import org.jetbrains.kotlin.backend.common.extensions.IrPluginContext
 import org.jetbrains.kotlin.backend.jvm.JvmBackendContext
