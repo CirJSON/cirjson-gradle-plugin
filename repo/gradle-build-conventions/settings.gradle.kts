@@ -42,4 +42,5 @@ dependencyResolutionManagement {
     }
 }
 
+include(":buildsrc-compat")
 include(":prepare-deps")

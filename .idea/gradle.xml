@@ -4,6 +4,29 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/repo/gradle-build-conventions" name="gradle-build-conventions">
+                <projects>
+                  <project path="$PROJECT_DIR$/repo/gradle-build-conventions" />
+                  <project path="$PROJECT_DIR$/repo/gradle-build-conventions/buildsrc-compat" />
+                  <project path="$PROJECT_DIR$/repo/gradle-build-conventions/prepare-deps" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/repo/gradle-settings-conventions" name="gradle-settings-conventions">
+                <projects>
+                  <project path="$PROJECT_DIR$/repo/gradle-settings-conventions" />
+                  <project path="$PROJECT_DIR$/repo/gradle-settings-conventions/build-cache" />
+                  <project path="$PROJECT_DIR$/repo/gradle-settings-conventions/gradle-enterprise" />
+                  <project path="$PROJECT_DIR$/repo/gradle-settings-conventions/internal-gradle-setup" />
+                  <project path="$PROJECT_DIR$/repo/gradle-settings-conventions/jvm-toolchain-provisioning" />
+                  <project path="$PROJECT_DIR$/repo/gradle-settings-conventions/kotlin-daemon-config" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
@@ -12,6 +35,15 @@
             <option value="$PROJECT_DIR$/cirjson-compiler-plugin.common" />
             <option value="$PROJECT_DIR$/cirjson-compiler-plugin.k1" />
             <option value="$PROJECT_DIR$/cirjson-compiler-plugin.k2" />
+            <option value="$PROJECT_DIR$/repo/gradle-build-conventions" />
+            <option value="$PROJECT_DIR$/repo/gradle-build-conventions/buildsrc-compat" />
+            <option value="$PROJECT_DIR$/repo/gradle-build-conventions/prepare-deps" />
+            <option value="$PROJECT_DIR$/repo/gradle-settings-conventions" />
+            <option value="$PROJECT_DIR$/repo/gradle-settings-conventions/build-cache" />
+            <option value="$PROJECT_DIR$/repo/gradle-settings-conventions/gradle-enterprise" />
+            <option value="$PROJECT_DIR$/repo/gradle-settings-conventions/internal-gradle-setup" />
+            <option value="$PROJECT_DIR$/repo/gradle-settings-conventions/jvm-toolchain-provisioning" />
+            <option value="$PROJECT_DIR$/repo/gradle-settings-conventions/kotlin-daemon-config" />
           </set>
         </option>
       </GradleProjectSettings>
