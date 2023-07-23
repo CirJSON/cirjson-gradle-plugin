@@ -51,11 +51,11 @@ repositories {
 }
 
 dependencies {
-    //    embedded(project(":kotlinx-serialization-compiler-plugin.common"))// { isTransitive = false }
-    //    embedded(project(":kotlinx-serialization-compiler-plugin.k1")) { isTransitive = false }
-    //    embedded(project(":kotlinx-serialization-compiler-plugin.k2")) { isTransitive = false }
-    //    embedded(project(":kotlinx-serialization-compiler-plugin.backend")) { isTransitive = false }
-    //    embedded(project(":kotlinx-serialization-compiler-plugin.cli")) { isTransitive = false }
+    implementation(project(":cirjson-compiler-plugin.common"))
+    implementation(project(":cirjson-compiler-plugin.k1"))
+    implementation(project(":cirjson-compiler-plugin.k2"))
+    implementation(project(":cirjson-compiler-plugin.backend"))
+    implementation(project(":cirjson-compiler-plugin.cli"))
     testImplementation(kotlin("test"))
 }
 
@@ -65,4 +65,15 @@ tasks.test {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+tasks.named<Jar>("jar") {
+    val subPlugins = listOf("common", "k1", "k2", "backend", "cli")
+    val pluginRegex = Regex("cirjson-compiler-plugin\\.(?:${subPlugins.reduce { acc, s -> "$acc|$s" }})\\.jar")
+
+    from(configurations["compileClasspath"].filter {
+        pluginRegex.matches(it.name)
+    }.map {
+        if (it.isDirectory) it else zipTree(it)
+    })
 }
