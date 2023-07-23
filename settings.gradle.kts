@@ -18,9 +18,12 @@ plugins { //    id("build-cache")
 
 rootProject.name = "cirjson-gradle-plugin"
 
+include("cirjson-plugin")
+
 include(":cirjson-compiler-plugin.common")
 include(":cirjson-compiler-plugin.k1")
 include(":cirjson-compiler-plugin.k2")
 include(":cirjson-compiler-plugin.backend")
 include(":cirjson-compiler-plugin.cli")
-
+include(":cirjson-compiler-plugin-embeddable")
+project(":cirjson-compiler-plugin-embeddable").projectDir = File("./cirjson-compiler-plugin.embeddable")

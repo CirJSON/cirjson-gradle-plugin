@@ -7,7 +7,7 @@ import org.jetbrains.kotlin.config.CompilerConfiguration
 @OptIn(ExperimentalCompilerApi::class)
 class SerializationPluginOptions : CommandLineProcessor {
 
-    override val pluginId = "org.jetbrains.kotlinx.serialization"
+    override val pluginId = "org.cirjson.plugin.serialization"
 
     override val pluginOptions = listOf(DISABLE_INTRINSIC_OPTION)
 
