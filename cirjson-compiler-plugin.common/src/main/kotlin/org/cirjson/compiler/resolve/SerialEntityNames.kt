@@ -30,7 +30,7 @@ object SerialEntityNames {
 
     val KSERIALIZER_NAME = Name.identifier(KSERIALIZER_CLASS)
 
-    val SERIAL_CTOR_MARKER_NAME = Name.identifier("SerializationConstructorMarker")
+    val SERIAL_CTOR_MARKER_NAME = Name.identifier("CircularSerializationConstructorMarker")
 
     val KSERIALIZER_NAME_FQ = SerializationPackages.packageFqName.child(KSERIALIZER_NAME)
 
